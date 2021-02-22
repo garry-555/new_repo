@@ -1,0 +1,36 @@
+<% include ./partials/header %>
+   <div class="ui main text container segment">
+	   <div class="ui huge header">NEW BLOG</div>
+	   
+	   <form class="ui form" action="/blogs" method="POST">
+		   <div class="field">
+			   <label>TITLE</label>
+			    <input type="text" name="blog[title]" placeholder="Title">
+		   </div>
+		   <div class="field">
+			   <label>IMAGE</label>
+			    <input type="text" name="blog[image]" placeholder="image">
+		   </div>
+		   <div class="field">
+			   <label>BLOG CONTENT</label>
+			   <textarea name="blog[body]" placeholder="post your blog!" ></textarea>
+		   </div>
+		   <div class="field">
+                <div class="ui checkbox">
+                 <input type="checkbox" tabindex="0" class="hidden">
+                 <label>I agree to the Terms and Conditions</label>
+               </div>
+            </div>
+		    <!-- <input type="text" name="blog[body]" placeholder="post your blog!"> -->
+		   <!-- <input type="submit"> -->
+		   <button class="ui inverted blue button">
+			 submit!
+		   </button>
+		   
+		   
+	   </form>
+	   
+	  
+   </div>
+
+<% include ./partials/footer %>
